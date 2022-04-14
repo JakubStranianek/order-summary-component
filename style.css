@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #E0E8FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component {
+    background-color: white;
+    width: 450px;
+    height: max-content;
+    border-radius: 20px;
+}
+
+.component > img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: inherit;
+}
+
+.component-content, .component-content > h2 , .component-content > p,
+.procced, .cancel {
+    margin-top: 20px;
+}
+
+.component-content {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.component-content > h2 {
+    color: #1F2E55;
+    text-align: center;
+    font-size: 28px;
+}
+
+.component-content > p {
+    color: #717FA6;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.subscription-plan {
+    margin-top: 30px;
+    width: 100%;
+    height: 98px;
+    background-color: #F7F9FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 11px;
+}
+
+.subscription-plan > a {
+    color: #382AE1;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.subscription-plan > a:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.circle-bg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #DFE6FB;
+}
+
+.plan > h3 {
+    color:#1F2E55;
+    font-size: 16px;
+}
+
+.plan > p {
+    color:#717FA6;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.procced {
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #382AE1;
+    color: white;
+    border: none;
+    border-radius: 11px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.procced:hover {
+    background-color: #766CF1;
+}
+
+.cancel {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #717FA6;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.cancel:hover {
+    color: #1F2E55;
+}
+
+.procced:hover, .cancel:hover, .subscription-plan > a:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .component {
+        width: 375px;
+    }
+
+    .component-content {
+        width: 85%;
+    }
+
+    .component-content > h2 {
+        font-size: 22px;
+    }
+}
